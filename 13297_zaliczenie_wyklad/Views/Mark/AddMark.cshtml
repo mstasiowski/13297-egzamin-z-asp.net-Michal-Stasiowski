@@ -1,0 +1,27 @@
+﻿@model _13297_zaliczenie_wyklad.Models.Mark
+
+<div class="container-fluid" m-3>
+    <h2>Wpisz oceny</h2>
+    <form asp-controller="Mark" asp-action="Add" method="post">
+        <div class="mb-3">
+            <span asp-validation-for="album" class="text-danger"></span>
+            <label asp-for="album">Album</label>
+            <input class="form-control" asp-for="album" />
+        </div>
+        <div class="mb-3">
+            <span asp-validation-for="points" class="text-danger"></span>
+            <label asp-for="points">Liczba punktów</label>
+            <input class="form-control" asp-for="points" />
+        </div>
+
+        <div class="mb-3">
+            <span asp-validation-for="todaytime" class="text-danger"></span>
+            <label asp-for="todaytime">Data </label>
+            <input class="form-control" asp-for="todaytime" />
+        </div>
+
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Zapisz</button>
+        </div>
+    </form>
+</div>

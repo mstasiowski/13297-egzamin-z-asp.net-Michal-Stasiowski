@@ -1,0 +1,22 @@
+﻿@model ICollection<_13297_zaliczenie_wyklad.Models.Mark>
+
+<div class="container-fluid m-3">
+    <h2>Lista ocen</h2>
+    <table class="table">
+        @foreach (var mark in @Model)
+        {
+            <tr>
+                <td>
+                    @mark.album
+                </td>
+                <td>
+                    @mark.points
+                </td>
+                <td>
+                    @mark.todaytime.Year - @mark.todaytime.Month - @mark.todaytime.Day
+                </td>
+                
+            </tr>
+        }
+    </table>
+</div>
